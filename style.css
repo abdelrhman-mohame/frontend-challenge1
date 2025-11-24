@@ -1,0 +1,131 @@
+:root {
+  /* Primary */
+  --very-dark-magenta: hsl(300, 43%, 22%);
+  --soft-pink: hsl(333, 80%, 67%);
+
+  /* Neutral */
+  --dark-grayish-magenta: hsl(303, 10%, 53%);
+  --light-grayish-magenta: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
+
+  /* Typography */
+  --font-family: 'League Spartan', sans-serif;
+  --font-size-body: 15px;
+
+  /* Layout sizes */
+  --mobile-width: 375px;
+  --desktop-width: 1440px;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-body);
+  background-color: var(--white);
+  margin: 0;
+  padding: 0;
+}
+
+/* موبيل */
+@media (max-width: 375px) {
+  /* styles here */
+}
+
+/* تابلت */
+@media (max-width: 768px) {
+  /* optional */
+}
+
+/* ديسكتوب */
+@media (min-width: 1440px) {
+  /* styles here */
+}
+
+h1, h2, h3 {
+  color: var(--very-dark-magenta);
+  font-weight: 700;
+}
+
+p {
+  color: var(--dark-grayish-magenta);
+  line-height: 1.5;
+}
+
+.card {
+  background: var(--very-dark-magenta);
+  color: var(--white);
+  padding: 20px;
+  border-radius: 10px;
+}
+.user{
+    display: flex;
+    justify-content: space-around;
+}
+
+.rate-box {
+  background: var(--light-grayish-magenta);
+  color: var(--very-dark-magenta);
+  padding: 15px;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+.testimonials {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .testimonials {
+    flex-direction: column;
+  }
+}
+@media (min-width: 1440px) {
+  /* styles here */
+  .container{
+    display: flex;
+   
+   
+    
+  }
+  .card:nth-child(1){margin-top: 20px; margin-bottom: 60px;text-align: center;}
+  .card:nth-child(2){margin-top: 40px; margin-bottom: 40px; margin-right: 30px; margin-left: 30px; text-align: center;}
+  .card:nth-child(3){margin-top: 60px;margin-bottom: 20px;text-align: center; }
+  .ratings
+  {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+    .rate-box 
+    { 
+         
+        margin-top: 20px; 
+    }
+    .rate-box:nth-child(1)
+     { margin-right: 90px;
+    margin-left: 20px; 
+    }
+    .rate-box:nth-child(2) { margin-right: 70px;  margin-left: 40px; }
+    .rate-box:nth-child(3) { margin-right: 50px;  margin-left: 60px;  }
+  
+   .testimonials
+   {
+    display: flex;
+     
+     justify-content: space-around
+   }
+   .heading{
+    margin-left: 40px;
+   }
+   
+  
+}
+
